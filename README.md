@@ -16,7 +16,7 @@ Criar um programa em C que permita ao usuário inserir os dados de duas cartas d
  
     - [x] Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
  
-    - [] Após o usuário inserir os dados de cada carta, seu programa deve exibir na tela as informações cadastradas, de forma organizada e legível. Para cada carta, imprima cada informação em uma linha separada, com uma descrição clara. Por exemplo:
+    - [x] Após o usuário inserir os dados de cada carta, seu programa deve exibir na tela as informações cadastradas, de forma organizada e legível. Para cada carta, imprima cada informação em uma linha separada, com uma descrição clara. Por exemplo:
 
  
 # Exemplos:
