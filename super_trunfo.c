@@ -18,8 +18,11 @@ int main(){
     int population_CardB; 
     float area_CardB; 
     float PIB_CardB; 
-    int sights_CardB; 
-
+    int sights_CardB;
+    
+    
+    //Game Start: 
+    char startGame; 
 
     //intro:
     printf("Bem-vindo ao super trunfo, vamos criar a sua primeira carta!\n\n");
@@ -50,7 +53,7 @@ int main(){
     scanf("%i", &sights_CardA);
     getchar(); //remove /n from the start buffer
 
-    //Congratulatory message A
+    //Congrats message A
     printf("\nParabéns você criou a sua primeira carta dentro do game, aqui está ela:\n\n");
 
     printf("Carta 1:\n");
@@ -90,7 +93,7 @@ int main(){
     printf("Digite a quantidade de pontos turísticos na cidade: "); 
     scanf("%i", &sights_CardB);
     
-    //Congratulatory message B
+    //Congrats message B
     printf("\nParabéns você criou o seu deck no jogo trunfo, aqui está a sua segunda carta:\n\n"); 
 
     printf("Carta 2:\n");
@@ -101,6 +104,25 @@ int main(){
     printf("Área: %f km²\n", area_CardB);
     printf("PIB: %.2f bilhões de reais\n", PIB_CardB);
     printf("Número de Pontos Turísticos: %i\n", sights_CardB);
+
+
+    //Start the game: 
+    printf("\n\nAgora vamos jogar!");
+    printf("\n\nVamos comparar a população representada em cada carta."); 
+    printf("\n\nComparação de cartas (Atributo: População):");
+
+    //Logic 
+    if(population_CardA > population_CardB)
+    {   
+        printf("\nCarta 1 - %s: %i\n", city_CardA, population_CardA);
+        printf("Carta 2 - %s: %i\n", city_CardB, population_CardB);
+        printf("Resultado: Carta A (%s) venceu", city_CardA); 
+    }else 
+    {
+        printf("\nCarta 1 - %s: %i\n", city_CardA, population_CardA);
+        printf("Carta 2 - %s: %i\n", city_CardB, population_CardB);
+        printf("Resultado: Carta B (%s) venceu", city_CardB);  
+    }
 
     return 0; 
 }
